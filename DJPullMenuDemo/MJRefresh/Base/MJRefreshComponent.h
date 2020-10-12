@@ -12,7 +12,6 @@
 #import "UIView+MJExtension.h"
 #import "UIScrollView+MJExtension.h"
 #import "UIScrollView+MJRefresh.h"
-#import "NSBundle+MJRefresh.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

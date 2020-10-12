@@ -15,9 +15,7 @@
 		71B11321253402B700D488D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71B1131F253402B700D488D0 /* LaunchScreen.storyboard */; };
 		71B1145D25341BCD00D488D0 /* UIScrollView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 71B1142625341BCC00D488D0 /* UIScrollView+MJRefresh.m */; };
 		71B1146925341BCD00D488D0 /* UIScrollView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 71B1144925341BCD00D488D0 /* UIScrollView+MJExtension.m */; };
-		71B1147025341BCD00D488D0 /* NSBundle+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 71B1145825341BCD00D488D0 /* NSBundle+MJRefresh.m */; };
 		71B1147125341BCD00D488D0 /* UIView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 71B1145925341BCD00D488D0 /* UIView+MJExtension.m */; };
-		71B1147325341BCD00D488D0 /* MJRefresh.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 71B1145B25341BCD00D488D0 /* MJRefresh.bundle */; };
 		71B1147425341BCD00D488D0 /* MJRefreshConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 71B1145C25341BCD00D488D0 /* MJRefreshConst.m */; };
 		71B114882534239100D488D0 /* MJRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 71B1147D2534239000D488D0 /* MJRefreshHeader.m */; };
 		71B1148B2534239100D488D0 /* MJRefreshComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 71B114852534239000D488D0 /* MJRefreshComponent.m */; };
@@ -35,15 +33,12 @@
 		71B1142525341BCB00D488D0 /* DJPullMenuDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DJPullMenuDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 		71B1142625341BCC00D488D0 /* UIScrollView+MJRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+MJRefresh.m"; sourceTree = "<group>"; };
 		71B1142725341BCC00D488D0 /* MJRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefresh.h; sourceTree = "<group>"; };
-		71B1142825341BCC00D488D0 /* NSBundle+MJRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+MJRefresh.h"; sourceTree = "<group>"; };
 		71B1142925341BCC00D488D0 /* UIScrollView+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+MJExtension.h"; sourceTree = "<group>"; };
 		71B1142A25341BCC00D488D0 /* UIScrollView+MJRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+MJRefresh.h"; sourceTree = "<group>"; };
 		71B1144825341BCC00D488D0 /* UIView+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MJExtension.h"; sourceTree = "<group>"; };
 		71B1144925341BCD00D488D0 /* UIScrollView+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+MJExtension.m"; sourceTree = "<group>"; };
 		71B1145725341BCD00D488D0 /* MJRefreshConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshConst.h; sourceTree = "<group>"; };
-		71B1145825341BCD00D488D0 /* NSBundle+MJRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+MJRefresh.m"; sourceTree = "<group>"; };
 		71B1145925341BCD00D488D0 /* UIView+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MJExtension.m"; sourceTree = "<group>"; };
-		71B1145B25341BCD00D488D0 /* MJRefresh.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MJRefresh.bundle; sourceTree = "<group>"; };
 		71B1145C25341BCD00D488D0 /* MJRefreshConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshConst.m; sourceTree = "<group>"; };
 		71B1147C2534238F00D488D0 /* MJRefreshHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshHeader.h; sourceTree = "<group>"; };
 		71B1147D2534239000D488D0 /* MJRefreshHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshHeader.m; sourceTree = "<group>"; };
@@ -96,13 +91,10 @@
 		71B113D425341BA600D488D0 /* MJRefresh */ = {
 			isa = PBXGroup;
 			children = (
-				71B1145B25341BCD00D488D0 /* MJRefresh.bundle */,
 				71B1144A25341BCD00D488D0 /* Base */,
 				71B1142725341BCC00D488D0 /* MJRefresh.h */,
 				71B1145725341BCD00D488D0 /* MJRefreshConst.h */,
 				71B1145C25341BCD00D488D0 /* MJRefreshConst.m */,
-				71B1142825341BCC00D488D0 /* NSBundle+MJRefresh.h */,
-				71B1145825341BCD00D488D0 /* NSBundle+MJRefresh.m */,
 				71B1142925341BCC00D488D0 /* UIScrollView+MJExtension.h */,
 				71B1144925341BCD00D488D0 /* UIScrollView+MJExtension.m */,
 				71B1142A25341BCC00D488D0 /* UIScrollView+MJRefresh.h */,
@@ -185,7 +177,6 @@
 			files = (
 				71B11321253402B700D488D0 /* LaunchScreen.storyboard in Resources */,
 				71B1131E253402B700D488D0 /* Assets.xcassets in Resources */,
-				71B1147325341BCD00D488D0 /* MJRefresh.bundle in Resources */,
 				71B1131C253402B500D488D0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -204,7 +195,6 @@
 				71B1148B2534239100D488D0 /* MJRefreshComponent.m in Sources */,
 				71B114882534239100D488D0 /* MJRefreshHeader.m in Sources */,
 				71B1146925341BCD00D488D0 /* UIScrollView+MJExtension.m in Sources */,
-				71B1147025341BCD00D488D0 /* NSBundle+MJRefresh.m in Sources */,
 				71B11315253402B500D488D0 /* AppDelegate.swift in Sources */,
 				71B11317253402B500D488D0 /* SceneDelegate.swift in Sources */,
 			);
