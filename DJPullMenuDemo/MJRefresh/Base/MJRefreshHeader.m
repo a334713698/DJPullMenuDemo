@@ -40,7 +40,7 @@ NSString * const MJRefreshHeaderRefreshingBoundsKey = @"MJRefreshHeaderRefreshin
     self.lastUpdatedTimeKey = MJRefreshHeaderLastUpdatedTimeKey;
     
     // 设置高度
-    self.mj_h = MJRefreshHeaderHeight;
+    self.mj_h = (self.mj_size.height <= 0.01) ? MJRefreshHeaderHeight : self.mj_size.height;
 }
 
 - (void)placeSubviews

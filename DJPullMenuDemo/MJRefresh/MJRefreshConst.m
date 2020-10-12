@@ -3,7 +3,7 @@
 #import <UIKit/UIKit.h>
 
 const CGFloat MJRefreshLabelLeftInset = 25;
-const CGFloat MJRefreshHeaderHeight = 776.0;
+const CGFloat MJRefreshHeaderHeight = 44.0;
 const CGFloat MJRefreshFooterHeight = 44.0;
 const CGFloat MJRefreshTrailWidth = 60.0;
 const CGFloat MJRefreshFastAnimationDuration = 0.25;
