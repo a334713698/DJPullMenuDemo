@@ -108,9 +108,9 @@
 		71B113D425341BA600D488D0 /* MJRefresh */ = {
 			isa = PBXGroup;
 			children = (
+				71B1145B25341BCD00D488D0 /* MJRefresh.bundle */,
 				71B1144A25341BCD00D488D0 /* Base */,
 				71B1142B25341BCC00D488D0 /* Custom */,
-				71B1145B25341BCD00D488D0 /* MJRefresh.bundle */,
 				71B1142725341BCC00D488D0 /* MJRefresh.h */,
 				71B1144725341BCC00D488D0 /* MJRefreshConfig.h */,
 				71B1145A25341BCD00D488D0 /* MJRefreshConfig.m */,
