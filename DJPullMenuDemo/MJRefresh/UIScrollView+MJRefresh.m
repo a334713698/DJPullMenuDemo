@@ -9,8 +9,6 @@
 
 #import "UIScrollView+MJRefresh.h"
 #import "MJRefreshHeader.h"
-#import "MJRefreshFooter.h"
-#import "MJRefreshTrailer.h"
 #import <objc/runtime.h>
 
 @implementation UIScrollView (MJRefresh)
@@ -36,53 +34,8 @@ static const char MJRefreshHeaderKey = '\0';
 }
 
 #pragma mark - footer
-static const char MJRefreshFooterKey = '\0';
-- (void)setMj_footer:(MJRefreshFooter *)mj_footer
-{
-    if (mj_footer != self.mj_footer) {
-        // 删除旧的，添加新的
-        [self.mj_footer removeFromSuperview];
-        [self insertSubview:mj_footer atIndex:0];
-        
-        // 存储新的
-        objc_setAssociatedObject(self, &MJRefreshFooterKey,
-                                 mj_footer, OBJC_ASSOCIATION_RETAIN);
-    }
-}
 
-- (MJRefreshFooter *)mj_footer
-{
-    return objc_getAssociatedObject(self, &MJRefreshFooterKey);
-}
 
-#pragma mark - footer
-static const char MJRefreshTrailerKey = '\0';
-- (void)setMj_trailer:(MJRefreshTrailer *)mj_trailer {
-    if (mj_trailer != self.mj_trailer) {
-        // 删除旧的，添加新的
-        [self.mj_trailer removeFromSuperview];
-        [self insertSubview:mj_trailer atIndex:0];
-        
-        // 存储新的
-        objc_setAssociatedObject(self, &MJRefreshTrailerKey,
-                                 mj_trailer, OBJC_ASSOCIATION_RETAIN);
-    }
-}
-
-- (MJRefreshTrailer *)mj_trailer {
-    return objc_getAssociatedObject(self, &MJRefreshTrailerKey);
-}
-
-#pragma mark - 过期
-- (void)setFooter:(MJRefreshFooter *)footer
-{
-    self.mj_footer = footer;
-}
-
-- (MJRefreshFooter *)footer
-{
-    return self.mj_footer;
-}
 
 - (void)setHeader:(MJRefreshHeader *)header
 {

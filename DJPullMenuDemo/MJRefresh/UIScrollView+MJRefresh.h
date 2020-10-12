@@ -10,7 +10,7 @@
 #import <UIKit/UIKit.h>
 #import "MJRefreshConst.h"
 
-@class MJRefreshHeader, MJRefreshFooter, MJRefreshTrailer;
+@class MJRefreshHeader;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -18,12 +18,6 @@ NS_ASSUME_NONNULL_BEGIN
 /** 下拉刷新控件 */
 @property (strong, nonatomic, nullable) MJRefreshHeader *mj_header;
 @property (strong, nonatomic, nullable) MJRefreshHeader *header MJRefreshDeprecated("使用mj_header");
-/** 上拉刷新控件 */
-@property (strong, nonatomic, nullable) MJRefreshFooter *mj_footer;
-@property (strong, nonatomic, nullable) MJRefreshFooter *footer MJRefreshDeprecated("使用mj_footer");
-
-/** 左滑刷新控件 */
-@property (strong, nonatomic, nullable) MJRefreshTrailer *mj_trailer;
 
 #pragma mark - other
 - (NSInteger)mj_totalDataCount;

@@ -25,6 +25,11 @@ NS_ASSUME_NONNULL_BEGIN
 /** 忽略多少scrollView的contentInset的top */
 @property (assign, nonatomic) CGFloat ignoredScrollViewContentInsetTop;
 
+/** 空间高度 */
+@property (assign, nonatomic) CGFloat headerHeight;
+
+
+
 /** 默认是关闭状态, 如果遇到 CollectionView 的动画异常问题可以尝试打开 */
 @property (nonatomic) BOOL isCollectionViewAnimationBug;
 @end

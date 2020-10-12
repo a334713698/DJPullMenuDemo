@@ -5,12 +5,5 @@
 #import "UIScrollView+MJExtension.h"
 #import "UIView+MJExtension.h"
 
-#import "MJRefreshNormalHeader.h"
-#import "MJRefreshGifHeader.h"
+#import "MJRefreshHeader.h"
 
-#import "MJRefreshBackNormalFooter.h"
-#import "MJRefreshBackGifFooter.h"
-#import "MJRefreshAutoNormalFooter.h"
-#import "MJRefreshAutoGifFooter.h"
-
-#import "MJRefreshNormalTrailer.h"

@@ -11,7 +11,8 @@ import UIKit
 class ViewController: UIViewController, UIScrollViewDelegate, UITableViewDelegate, UITableViewDataSource {
     
     var beginDragOffsetY: CGFloat = 0.0
-
+    var isOpen = false
+    
     
     // prama MARK - Property
     private lazy var tableView: UITableView = {
@@ -26,12 +27,12 @@ class ViewController: UIViewController, UIScrollViewDelegate, UITableViewDelegat
             tableView.estimatedSectionFooterHeight = 0.01
         }
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
-        let mj_header = MJRefreshHeader.init(frame: CGRect.init(x: 0, y: 0, width: 375, height: 400))
+        let mj_header = MJRefreshHeader.init(frame: CGRect.init(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: UIScreen.main.bounds.size.height))
         mj_header.setRefreshingTarget(self, refreshingAction: #selector(loadHeaderView))
         mj_header.backgroundColor = .yellow
         tableView.mj_header = mj_header
 
-        var lab = UILabel.init(frame: CGRect.init(x: 0, y: 0, width: 375, height: 50))
+        var lab = UILabel.init(frame: mj_header.frame)
         mj_header.addSubview(lab)
         lab.text = "hello, world"
         lab.textAlignment = .center
@@ -41,8 +42,6 @@ class ViewController: UIViewController, UIScrollViewDelegate, UITableViewDelegat
     
     @objc func loadHeaderView() {
         print("hello")
-//        Dispatch.sleep(3)
-//        self.tableView.mj_header?.endRefreshing()
     }
     
     // prama MARK - VC life
@@ -65,15 +64,11 @@ class ViewController: UIViewController, UIScrollViewDelegate, UITableViewDelegat
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        
+        cell.selectionStyle = .none
         return cell
     }
     
     // prama MARK - UITableViewDataSource
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-    }
-    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 44
     }
@@ -89,27 +84,23 @@ class ViewController: UIViewController, UIScrollViewDelegate, UITableViewDelegat
     // prama MARK - UIScrollViewDelegate
     func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
         NSLog("开始拖拽")
-        NSLog("%lf", scrollView.contentOffset.y)
+//        NSLog("%lf", scrollView.contentOffset.y)
         beginDragOffsetY = scrollView.contentOffset.y
     }
-    
-    
-    func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
-        NSLog("即将放手")
-        NSLog("%lf", scrollView.contentOffset.y)
-    }
-    
-    
+
     
     func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
         NSLog("已经放手")
-        NSLog("%lf", scrollView.contentOffset.y)
+//        NSLog("%lf", scrollView.contentOffset.y)
         if scrollView.contentOffset.y < beginDragOffsetY {
             self.tableView.mj_header!.beginRefreshing()
+            self.isOpen = true
         }else{
             self.tableView.mj_header!.endRefreshing()
+            self.isOpen = false
         }
-
+        self.tabBarController?.tabBar.isHidden = self.isOpen
     }
+    
 }
 
