@@ -23,7 +23,6 @@
 		71B114882534239100D488D0 /* MJRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 71B1147D2534239000D488D0 /* MJRefreshHeader.m */; };
 		71B1148B2534239100D488D0 /* MJRefreshComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 71B114852534239000D488D0 /* MJRefreshComponent.m */; };
 		71B11496253423AC00D488D0 /* MJRefreshStateHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 71B11490253423AB00D488D0 /* MJRefreshStateHeader.m */; };
-		71B11497253423AC00D488D0 /* MJRefreshGifHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 71B11492253423AC00D488D0 /* MJRefreshGifHeader.m */; };
 		71B11498253423AC00D488D0 /* MJRefreshNormalHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 71B11494253423AC00D488D0 /* MJRefreshNormalHeader.m */; };
 /* End PBXBuildFile section */
 
@@ -56,8 +55,6 @@
 		71B114802534239000D488D0 /* MJRefreshComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshComponent.h; sourceTree = "<group>"; };
 		71B114852534239000D488D0 /* MJRefreshComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshComponent.m; sourceTree = "<group>"; };
 		71B11490253423AB00D488D0 /* MJRefreshStateHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshStateHeader.m; sourceTree = "<group>"; };
-		71B11491253423AC00D488D0 /* MJRefreshGifHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshGifHeader.h; sourceTree = "<group>"; };
-		71B11492253423AC00D488D0 /* MJRefreshGifHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshGifHeader.m; sourceTree = "<group>"; };
 		71B11493253423AC00D488D0 /* MJRefreshNormalHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshNormalHeader.h; sourceTree = "<group>"; };
 		71B11494253423AC00D488D0 /* MJRefreshNormalHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshNormalHeader.m; sourceTree = "<group>"; };
 		71B11495253423AC00D488D0 /* MJRefreshStateHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshStateHeader.h; sourceTree = "<group>"; };
@@ -140,8 +137,6 @@
 		71B1144025341BCC00D488D0 /* Header */ = {
 			isa = PBXGroup;
 			children = (
-				71B11491253423AC00D488D0 /* MJRefreshGifHeader.h */,
-				71B11492253423AC00D488D0 /* MJRefreshGifHeader.m */,
 				71B11493253423AC00D488D0 /* MJRefreshNormalHeader.h */,
 				71B11494253423AC00D488D0 /* MJRefreshNormalHeader.m */,
 				71B11495253423AC00D488D0 /* MJRefreshStateHeader.h */,
@@ -234,7 +229,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				71B11498253423AC00D488D0 /* MJRefreshNormalHeader.m in Sources */,
-				71B11497253423AC00D488D0 /* MJRefreshGifHeader.m in Sources */,
 				71B1147425341BCD00D488D0 /* MJRefreshConst.m in Sources */,
 				71B11496253423AC00D488D0 /* MJRefreshStateHeader.m in Sources */,
 				71B1145D25341BCD00D488D0 /* UIScrollView+MJRefresh.m in Sources */,
