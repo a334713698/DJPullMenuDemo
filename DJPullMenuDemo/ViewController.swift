@@ -30,6 +30,7 @@ class ViewController: UIViewController, UIScrollViewDelegate, UITableViewDelegat
         let mj_header = MJRefreshHeader.init(frame: CGRect.init(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: UIScreen.main.bounds.size.height))
         mj_header.setRefreshingTarget(self, refreshingAction: #selector(loadHeaderView))
         mj_header.backgroundColor = .yellow
+        mj_header.isAutomaticallyChangeAlpha = true
         tableView.mj_header = mj_header
 
         var lab = UILabel.init(frame: mj_header.frame)
